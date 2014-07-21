@@ -1,0 +1,30 @@
+{
+  "name": "payment",
+  "version": "0.0.1",
+  "homepage": "https://github.com/michael-ryabokon/payment",
+  "authors": [
+    "michael-ryabokon <michael.ryabokon@gmail.com>"
+  ],
+  "description": "Payment planer",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "payment"
+  ],
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.20",
+    "bootstrap": "~3.2.0",
+    "underscore": "~1.6.0"
+  }
+} 
