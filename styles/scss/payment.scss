@@ -1,9 +1,14 @@
 @import 'colors';
+@import 'mixin';
 
 .payment {
 	.main-header {
 		width: 100%;
 		height: 80px;
 		background-color: $dark-grey;
+		h1.white.text-shadow {
+			@include text-shadow(2px, 5px, $black);
+			@include text-color($white);
+		}
 	}
 }

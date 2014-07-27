@@ -2,3 +2,6 @@
   width: 100%;
   height: 80px;
   background-color: #222222; }
+  .payment .main-header h1.white.text-shadow {
+    text-shadow: 2px 5px black;
+    color: white; }
