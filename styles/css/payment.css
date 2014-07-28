@@ -5,3 +5,6 @@
   .payment .main-header h1.white.text-shadow {
     text-shadow: 2px 5px black;
     color: white; }
+.payment .payment-grid .border-bottom {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 20px; }

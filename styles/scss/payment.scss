@@ -11,4 +11,10 @@
 			@include text-color($white);
 		}
 	}
+	.payment-grid {
+		.border-bottom {
+			border-bottom: 1px solid $light-grey;
+			margin-bottom: 20px;
+		}
+	}
 }
