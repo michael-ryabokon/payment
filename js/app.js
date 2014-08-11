@@ -1,15 +1,34 @@
-var payment = angular.module('payment', ['ngGrid']);
+var payment = angular.module('payment', []);
 
 payment.controller('PaymentMain', function ($scope) {
-	$scope.rows = [{
-		season: 'summer'
-		// ,months: ['June', 'July', 'August']
+	//move to BE
+	var response = [{
+		season: 'summer',
+		months: ['June', 'July', 'August']
+	}, {
+		season: 'autumn',
+		months: ['Septemper', 'October', 'November']
+	}, {
+		season: 'winter',
+		months: ['December', 'January', 'February']
+	}, {
+		season: 'spring',
+		months: ['March', 'April', 'May']
 	}];
 
-	$scope.gridOptions = {
-		data: 'rows'
-	}
+	$scope.getMonths = function (data) {
+		var result = [];
 
+		angular.forEach(data, function (row) {
+			result = result.concat(row.months);
+		});
+
+		return result;
+	};
+
+	$scope.months = $scope.getMonths(response);
+	
+	$scope.totalMonths = $scope.months.length;
 });
 
 

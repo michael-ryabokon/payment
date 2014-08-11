@@ -78,7 +78,22 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="container payment-grid" ng-grid="gridOptions"></div>
+		<div class="container payment-grid">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Services</th>
+						<th colspan="{{totalMonths}}">Period of year</th>
+					</tr>
+				</thead>
+				<tbody class="payments">
+					<tr>
+						<td class="service-name">Service name</td>
+						<td ng-repeat="month in months">{{month}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</main>
 </body>
 </html>
